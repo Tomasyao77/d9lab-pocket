@@ -13,7 +13,7 @@ swagger是一个流行的API开发框架，技术成熟，在国外十分流行�
 
 
 ## 开始使用
-> 1. 在pom.xml中引入两个依赖，注意排除spring相关，因为我们项目中已经有了。版本2.7，不要太低。
+> 1.在pom.xml中引入两个依赖，注意排除spring相关，因为我们项目中已经有了。版本2.7，不要太低。
 
 ```
 <!--swagger2 springfox集成swagger2-->
@@ -74,7 +74,7 @@ swagger是一个流行的API开发框架，技术成熟，在国外十分流行�
             <version>2.7.0</version>
         </dependency>
 ```
-> 2. 建立swagger配置类，由于是分布式系统，所以在每个系统中都要存在各自的文件
+> 2.建立swagger配置类，由于是分布式系统，所以在每个系统中都要存在各自的文件
 
 ```
 package edu.whut.pocket.base.util;
@@ -117,8 +117,8 @@ public class Swagger2Config {
     }
 }
 ```
-`注意改类要能被spring扫描到，需在sping配置文件中配置包扫描。`
-> 3. 在类上使用@Api等注解配置，在方法上使用@ApiOperation等注解配置
+`注意该类要能被spring扫描到，需在sping配置文件中配置包扫描。`
+> 3.在类上使用@Api等注解配置，在方法上使用@ApiOperation等注解配置
 
 我们在AdminController类上使用@Api注解描述该类在接口文档中的相应信息。
 ```
